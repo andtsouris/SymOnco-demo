@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "symonco-mipro-v2"
+version = "0.1.0"
+description = "Standalone DSPy MIPROv2 workflow for recommendation-letter extraction"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "dspy>=2.6,<4",
+    "httpx>=0.27",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+
+[project.scripts]
+mipro-optimize = "mipro_v2.cli:main"
+mipro-run = "mipro_v2.inference:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

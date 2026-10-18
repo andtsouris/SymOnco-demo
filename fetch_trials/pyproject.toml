@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "symonco-fetch-trials"
+version = "0.1.0"
+description = "Standalone ClinicalTrials.gov lookup service for SymOnco"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.110",
+    "httpx>=0.27",
+    "pydantic>=2.6",
+    "python-dotenv>=1.0",
+    "uvicorn[standard]>=0.29",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
