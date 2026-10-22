@@ -1,6 +1,7 @@
 # SymOnco demo
 
 This repository contains some of the components built in the preparation for the SymOnco project. They contain the prompt optimization module to extract various features for MTB treatment recommendation letters and python FastAPI microservices for retrieving data from public APIs.
+⚠️ As a big part of our internal codebase (*i.e.* feature extraction validation, test knowledge graph) contains patient-related data, we were not to release it publicly for the moment. ⚠️
 
 ## Components
 
