@@ -1,6 +1,6 @@
 # SymOnco demo
 
-This repository contains some of the components built in the preparation for the SymOnco project. They contain the prompt optimization module to extract various features for MTB treatment recommendation letters and python FastAPI microservices for retrieving data from public APIs.
+This repository contains some of the components built in the preparation for the SymOnco project. They contain the omics pdf report parser, the prompt optimization module used to extract various features from MTB treatment recommendation letters and the python FastAPI microservices used to retrieve data from public APIs.
 
 ⚠️  As a big part of our internal codebase (*i.e.* feature extraction validation, test knowledge graph) contains patient-related data, we are not able to release it publicly for the moment. ⚠️
 
@@ -8,6 +8,7 @@ This repository contains some of the components built in the preparation for the
 
 | Folder | Purpose | Default port |
 | --- | --- | ---: |
+| [`OmicsReportParser_demo/`](./OmicsReportParser_demo/) | Parse standardized WGS and WES reports into json files. | — |
 | [`mipro_v2/`](./mipro_v2/) | Tune and run DSPy MIPROv2 extractors for publications, trials, genes, drugs, and evidence levels | — |
 | [`fetch_publications/`](./fetch_publications/) | Resolve PubMed identifiers and fetch metadata, with optional PMC full text | 5170 |
 | [`fetch_drugs/`](./fetch_drugs/) | Resolve drug names using the NCI Drug Dictionary | 5171 |
